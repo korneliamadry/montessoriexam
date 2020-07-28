@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Scroll effects: Level up your CSS animation skills</title>
+
+   
+    <!-- Reset CSS -->
+    <link href="stylesheets/css_reset.css" rel="stylesheet">
+    <!-- Main css -->
+    <link href="stylesheets/main.css" rel="stylesheet">
+    <!-- Scroll -->
+    <link href="stylesheets/scroll.css" rel="stylesheet">
+   <!-- Parent page style -->
+   <link href="stylesheets/style_parent.css" rel="stylesheet">
+ 
+  
+
+
+<!-- fonts from Google Fonts library -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet"> 
+
+
+
+    <meta name="keywords" content="footer, address, phone, icons" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+   
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- pink line 
+<img src="images/line.svg" class="line"> -->
+
+<div class="buttontop">
+<a href="index.html"><button> Parent log out </button> </a>
+</div>
+
+
+
+
+<a href="index.html"> 
+<img src="images/MWlogo_.svg" class="logotop">
+
+
+</a>
+
+
+
+
+
+
+
+<a href="#footer"><img src="images/talk.png" class="talkicon"> </a>
+
+
+
+
+      <br><br>
+    <article class="content">
+
+      <div id="ourPreschool"></div>
+
+
+
+    <h3>Dear parent,</h3>
+
+<p> we are glad that you trusted us in this beautiful, but also demanding adventure which is a care of your child. 
+Here is a parental corner to facilitate our systematic communication. Please select the appropriate section below. We can't wait to see you in 
+Montessori World and talk face to face :-) </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <body onhashchange="pageChange()">
+        <!-- tabbar navigation -->
+        <nav class="subsites">
+        <a href="#newsboard"> <img src="images/ic-newsboard.svg"> </a>
+          <a href="#thegroup"> <img src="images/ic-group.svg"> </a>
+          <a href="#gallery"> <img src="images/ic-gallery.svg"> </a>
+          <a href="#costs"> <img src="images/ic-costs.svg">  </a>
+ 
+        </nav>
+      
+        <!-- pages -->
+
+
+
+                <!-- News board -->
+                <section id="newsboard" class="page">
+
+ 
+                    <h1>News Board</h1>
+
+<h2>
+                    
+    <!-- JS for current date -->
+
+    Today is: 
+                    <script>
+                        var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = dd + '/' + mm + '/' + yyyy;
+document.write(today);
+                    </script>
+
+</h2>
+
+
+    <p>ㅤ- Please pack the <span style="font-weight: bold;"> rainshoes </span>for tomorrow! We are going for a short forest trip
+       <br>
+       ㅤ- There is a ZOO trip planned for 15.10 <br>
+       ㅤ- (Changing message)</p>
+<br><br>
+          <div style="position: absolute; left: 50%; width: 100vh;">
+            <div style="position: relative; left: -50%; width: 100vh;">
+              <img src="images/line1.svg" class="pinkline"> 
+            </div>
+          </div>
+         
+
+
+          <!-- inspiration, credits: https://www.w3schools.com/howto/howto_js_todolist.asp -->
+
+          <h2> My own To Do List</h2>
+
+
+
+
+
+
+
+
+          <div id="myDIV" class="headertodo">
+         
+            <input type="text" id="myInput" placeholder="Don't forget to...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+          </div>
+          
+          <ul id="myUL">
+            <li>Pay for lunches for May</li>
+            <li>Talk about holiday</li>
+            <li>Pack apples</li>
+            <li>Leave a slippers in preschool</li>
+            <li>Bring a memory game</li>
+
+          </ul>
+          <br><br>
+
+        
+                &#10004; I would like to receive e-mails with the notifications <br>
+                &#10004; I would like to receive text messages with the notifations
+              
+                  </a>
+                </section>
+
+
+        <!-- The group -->
+        <section id="thegroup" class="page">
+      
+            <h1>The Group</h1>
+    
+          <p>
+            <section>
+            <div id="grid-persons" class="grid-container"></div>
+
+         
+        </section>
+        </p>
+        
+        <!-- detail view -->
+        <section id="detail-view" class="page"></section>
+        </section>
+      
+
+
+        <!-- Gallery -->
+        <section id="gallery" class="page">
+    
+            <h1>Gallery</h1>
+            <br><br> 
+
+
+
+            
+
+
+
+     
+          <p></p>
+        </section>
+      
+        <!--  Costs -->
+        <section id="costs" class="page">
+        
+            <h1>Costs</h1>
+       
+
+
+
+
+          <p>
+
+
+          </p>
+        </section>
+      
+
+      
+   
+  
+
+
+        <!-- gallery 
+        902849003405-09ocd8e202r6c37shnl9e4dpbm19vjir.apps.googleusercontent.com  client ID
+    mcKLrqif2UIB5Kt7UjPv-4xr  client secret-->
+
+
+
+
+
+
+
+
+
+
+
+    </article>
+
+
+  
+
+
+    <!-- footer code inspired by shaan article on webdevtrick ( https://webdevtrick.com ) -->
+  
+    
+    
+
+     
+
+
+
+
+    <img src="images/shapespar.svg" class="parentshapes">
+      
+
+
+       
+        <footer class="footer-distributed">
+    
+
+
+        <div class="footer-left">
+    
+        <a href="#home"> <img src="images/footer-logo.svg" width="170px"> </a> 
+        <br><br>
+        <p class="footer-links">
+                
+        <a href="eng.html"> ENG </a> | <a href="pl.html"> PL </a> <br>
+        
+        </div>
+    
+
+
+          <div class="footer-center">
+
+            <a href="tel:przedszkole@swiat-montessori.pl"><i class="fa fa-phone"></i> <p>+48 606143423</p></a>
+<br>
+<a href="mailto:przedszkole@swiat-montessori.pl">  <i class="fa fa-envelope"></i><p>przedszkole@swiat-montessori.pl </p> </a>
+            <br>
+<a href="https://goo.gl/maps/G5LL8iHfLCBnaZQR8">
+<i class="fa fa-map-marker"></i><p>ul. Barcicka 10, 01-839, Warszawa</p> </a>
+        <br><br>
+          </div>
+    
+
+
+          <div class="footer-right">
+    
+          <p class="footer-company-about">
+          <span>Credits</span>
+         footer - <a href="https://webdevtrick.com/html-css-footer/">webdevtrick &copy; 2019 </a>
+
+         <br><br> 
+         Website is created by <a href="mailto:korneliamadry@gmail.com">Kornelia Mądry </a> as final project at Multimedia Design course, <a href="https://www.baaa.dk">
+    Business Academy Aarhus </a>, 2020
+            </p>
+
+          </div>
+
+
+
+
+    
+        </footer>
+    
+     
+        
+  
+
+
+        
+
+
+ 
+
+
+
+
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-storage.js"></script>
+
+
+
+
+
+<script>
+
+
+// Firebase Authentication
+   // Your web app's Firebase configuration
+   var firebaseConfig = {
+      apiKey: "AIzaSyAn2_RqvtIIgJdHku0SvGhOpdVVrAzCS5c",
+      authDomain: "montessori-proje-1595195652331.firebaseapp.com",
+      databaseURL: "https://montessori-proje-1595195652331.firebaseio.com",
+      projectId: "montessori-proje-1595195652331",
+      storageBucket: "montessori-proje-1595195652331.appspot.com",
+      messagingSenderId: "902849003405",
+      appId: "1:902849003405:web:3b29f4a4afb7c9c7dbc7c4"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  const auth = firebase.auth();
+  const storage = firebase.storage()
+  const storageRef = storage.ref();
+
+
+
+
+  </script>
+
+
+
+
+  
+
+
+ <!-- gallery from Firebase storage  -->
+ <script src="javascripts/galleryfirebase.js"></script>   
+
+  <script src="javascripts/show-on-scroll.js"></script>
+  <!-- list of kids -->
+  <script src="javascripts/group.js"></script>
+    <!-- SPA functionality  -->
+<script src="javascripts/spa.js"></script>
+ <!-- to do list  -->
+<script src="javascripts/todolist.js"></script>
+<!-- modal pop up window -->
+<script src="javascripts/modal.js"></script>
+
+
+
+
+    
+  </body>
+</html>
